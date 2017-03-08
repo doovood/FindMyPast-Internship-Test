@@ -1,3 +1,4 @@
+//simple function that gets the input from the users as to how many primes the program is to find
 function getInput(input)
 {
     for (var count = 1; count < input;)
@@ -7,7 +8,7 @@ function getInput(input)
                     primes[count] = testNum;
                     count++;
                 }
-
+            //everytime a prime is found add it to the primes array
             testNum++;
     }
         DisplayTable();
