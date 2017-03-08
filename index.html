@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="simple program for finding the prime numbers">
+    <meta name="author" content="David Thomson">
+
+    <title>Prime Finder</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Script to test for prime numbers -->
+    <script src="js/prime.js"></script>
+    
+    <script language="javascript" type="text/javascript">
+        var testNum=2; //the start point (first number we are checking)
+        //var input = 10;   //for debugging purposes input set to 3
+        var primes = new Array();
+        primes[0] = 1;
+
+        function getInput(input)
+        {
+            for (var count = 1; count < input;)
+            {
+                    if (isPrime(testNum) == true)
+                        {
+                            primes[count] = testNum;
+                            count++;
+                        }
+
+                    testNum++;
+            }
+                DisplayTable();
+        }
+                    
+    </script>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Intro Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Prime Finder</h1>
+                <p><strong>Usage Instructions:</strong> Using the input box below, enter the number of prime numbers that you wish to display. After entering the number of prime numbers simply click the "Calculate" button to display the results. </p>
+                <form Name="theForm">
+                <input Type=Text Name="input">
+                <input type="button" class="btn btn-primary" id="button-id" value="Calculate" onClick='getInput(theForm.input.value)'>
+                </form>
+
+                <hr>
+                
+                <h3>Results:</h3>
+                <p>The results are displayed below along with the count of each prime number.</p> 
+                <hr>
+                <div id="multiTable"></div>
+                <script language="javascript" type="text/javascript">
+                    /*var testNum=2; //the start point (first number we are checking)
+                    //var input = 10;   //for debugging purposes input set to 3
+                    var primes = new Array();
+                    primes[0] = 1;
+                    
+                    getInput()*/
+                    
+                </script> 
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
