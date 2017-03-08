@@ -12,18 +12,23 @@ function getInput(input)
     }
         DisplayTable();
 }
+  //function to display the results found in a table then find the multiples of thoses results
 
 function DisplayTable(){
-  /* first, get the values of the input fields and parse them as integers */
-
+    
+    //initialize the new table being generated
     document.write("<table border='2px'>");
-
+    
+    //the initial for loop corresponds to the vertical numbers in the grid (y axis)
     for(var y = 0; y < primes.length; y++) {
-    valy = primes[y];
+    
+        valy = primes[y];
         document.write("<tr style='height:30px;'>");
-
+        
+        //the nested for loop corresponds to the horizontal numbers in the grid (x axis)
         for(var x = 0; x < primes.length; x++) {
         valx = primes[x];
+            //add element to the table
             document.write("<td style='width:30px;'>" + valy*valx + "</td>");
         }
         document.write("</tr>");
