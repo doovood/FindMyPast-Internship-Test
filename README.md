@@ -2,7 +2,7 @@
 JavaScript test for the Find My Past internship opertunity. The test was to create a multiplication grid based on prime numbers.
 
 ## Author
-David Thomson
+David Thomson <br>
 david@thomsondesign.net
 
 ## Getting Started
