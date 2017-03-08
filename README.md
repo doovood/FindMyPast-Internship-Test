@@ -6,7 +6,7 @@ The test has been developed using javascript in a web based manner. A simple HTM
 
 The code itself can be found in the [prime.js](../blob/master/js/prime.js) file
 
-1.  To use the program open the [Index.html](../blob/master/FindMyPast-Internship-Test/index.html) file from the repository.
+1.  To use the program open the [Index.html](FindMyPast-Internship-Test/index.html) file from the repository.
 2.  Once opened simply enter the number of the primes that you wish to generate.
 3.  Finally Click the button labled "Calculate".
 
