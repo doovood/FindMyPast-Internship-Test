@@ -9,4 +9,4 @@ The test has been developed using javascript in a web based manner. A simple HTM
 3.  Finally Click the button labled "Calculate".
 
 ## Algorithm
-To generate the prime numbers a Trial Divison algorithm has been used. The Algorithm chosen test the number all the numbers from from two to the square root of the number being tested. In large test this signicantly reduced the number of tests.
+To generate the prime numbers a Trial Division algorithm has been used. The Algorithm chosen test the number all the numbers from from two to the square root of the number being tested. In large test this signicantly reduced the number of tests.
