@@ -16,31 +16,6 @@
     
     <!-- Custom Script to test for prime numbers -->
     <script src="js/prime.js"></script>
-    
-    <script language="javascript" type="text/javascript">
-        var testNum=2; //the start point (first number we are checking)
-        //var input = 10;   //for debugging purposes input set to 3
-        var primes = new Array();
-        primes[0] = 1;
-
-        function getInput(input)
-        {
-            for (var count = 1; count < input;)
-            {
-                    if (isPrime(testNum) == true)
-                        {
-                            primes[count] = testNum;
-                            count++;
-                        }
-
-                    testNum++;
-            }
-                DisplayTable();
-        }
-                    
-    </script>
-
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -55,22 +30,6 @@
                 <input Type=Text Name="input">
                 <input type="button" class="btn btn-primary" id="button-id" value="Calculate" onClick='getInput(theForm.input.value)'>
                 </form>
-
-                <hr>
-                
-                <h3>Results:</h3>
-                <p>The results are displayed below along with the count of each prime number.</p> 
-                <hr>
-                <div id="multiTable"></div>
-                <script language="javascript" type="text/javascript">
-                    /*var testNum=2; //the start point (first number we are checking)
-                    //var input = 10;   //for debugging purposes input set to 3
-                    var primes = new Array();
-                    primes[0] = 1;
-                    
-                    getInput()*/
-                    
-                </script> 
             </div>
         </div>
     </div>
