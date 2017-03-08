@@ -1,6 +1,9 @@
-//simple function that gets the input from the users as to how many primes the program is to find
+var primes = new Array(); //create global array to store primes so that all functions have access
+
+//simple function that listens for the input from the users as to how many primes the program is to find
 function getInput(input)
 {
+    var testNum=2;
     for (var count = 1; count < input;)
     {
             if (isPrime(testNum) == true)
@@ -8,15 +11,15 @@ function getInput(input)
                     primes[count] = testNum;
                     count++;
                 }
-            //everytime a prime is found add it to the primes array
+
             testNum++;
     }
         DisplayTable();
 }
-  //function to display the results found in a table then find the multiples of thoses results
 
 function DisplayTable(){
-    
+  /* first, get the values of the input fields and parse them as integers */
+    primes[0] = 1;
     //initialize the new table being generated
     document.write("<table border='2px'>");
     
